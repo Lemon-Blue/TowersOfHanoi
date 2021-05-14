@@ -1,0 +1,321 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1vw;
+	line-height: 1.7;
+	color: #000;
+	padding:10px;
+}
+
+.navbar{	
+  	position: sticky;
+  	z-index: 1;
+  	top: 0;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #fff; 
+}	
+	
+.navbar ul li{
+	display: inline-block;
+	padding: 10px 70px;
+	margin: 10px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.navbar ul li a {
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+.logo{
+	display: inline;
+	max-width: 60px;
+	padding: 0;
+	border: 0;
+	margin: 10px;
+	float:left;
+}
+
+.navbar ul li:hover {
+  	background-color: rgba(210,255,127,0.80);
+}
+
+.Introduction{
+	height: 75vh;
+	background-color: rgba(210,255,127,1.00);
+	clip-path: polygon(0 0,100% 0,100% 60vh,0 100%);
+}
+
+.headings{
+	text-align: center; 
+	color:#000;
+	margin-bottom: 30px;
+	width:50%;
+	float: left;
+	padding: 40px 0 0 0;
+}
+
+@keyframes moveinleft{
+	0%{
+		opacity: 0%;
+		transform: translateX(-50px);
+	}
+	80%{
+		transform: translateX(10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveinright{
+	0%{
+		opacity: 0%;
+		transform: translateX(50px);
+	}
+	80%{
+		transform: translateX(-10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.toh{	
+	text-align: center; 
+	color:#000;
+	text-transform: uppercase;	
+	font-size: 3.3vw;
+	letter-spacing: 10px;
+}
+
+.Introduction .toh{
+	animation-name: moveinleft;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+
+.tagline{	
+	text-align: center; 
+	color:#000;
+	text-transform: uppercase;
+	font-size: 1vw;
+	letter-spacing: 15.5px;
+	word-spacing: 9px;
+}
+
+.Introduction .tagline{
+	animation-name: moveinright;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+
+.cos{	
+	text-align: center; 
+	color:#000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 2vw;
+	transition: 0.5s;
+}
+
+.cos:hover{;
+	color: #fff;
+}
+
+.intropic{
+	max-width: 50%;
+	height: 70vh;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.cards{
+	float: left;
+	width:25%;
+	padding: 30px;
+}
+
+.foodimg{
+	width: 100%; 
+	height: 250px;
+	border-radius: 10%;
+}
+
+.foodname{
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.add {
+  float: right;
+  position: relative;
+  padding: 0.5px 18px 0.5px 2px;
+  border: 1px solid black;
+  border-radius: 10px; 
+  font-family: sans-serif;
+  font-weight: 40;
+  cursor: pointer;
+}
+#cb1,#cb2,#cb3,#cb4,#cb5,#cb6,#cb7,#cb8 {
+  display: none;
+}
+#cb1:checked + .add:after,#cb2:checked + .add:after,#cb3:checked + .add:after,#cb4:checked + .add:after,#cb5:checked + .add:after,#cb6:checked + .add:after,#cb7:checked + .add:after,#cb8:checked + .add:after {
+  content: "ADDED";
+  font-family: sans-serif;
+  font-weight: 40;
+  position: absolute;
+  padding-left: 2px;
+  top: -1px;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  background: rgb(0,256,0);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.fooddesc{
+	text-align: justify; 
+}
+
+.veglogo{
+	max-width: 20px;
+	float:left;
+	border-radius: 20%;
+}
+
+.foodprice{
+	text-align: right;
+}
+
+.dp{
+	font-size: 18px;
+	color: rgb(0,256,0);
+}
+
+.cp{
+	font-size: 10px;
+	color: rgba(0,0,0,0.7);
+	text-decoration: line-through;
+}
+
+.disc{
+	font-size: 10px;
+}
+
+.searchbar{
+	margin-top: 10px;
+	margin-left: 406px;	
+	margin-right: 420px;
+	border: 1px solid #555;
+	margin-bottom: 10px;
+}
+
+.searchbar input[type=text] {
+	padding: 6px 412px 6px 0;
+	margin: 3px;
+	border: none;
+	font-size: 17px;
+}
+.searchbar i {
+    position: absolute;
+}
+          
+.icon {
+    padding: 10px;
+    min-width: 100px;
+    float: right;
+}
+
+.Reviews{
+	background-image: url(../img/toh.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.Reviews .toh, .rr{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.revpic{
+	float: right;
+	width:250px;
+	height:230px;
+	padding:5px; 
+	border-radius: 8%;
+}
+
+.indivreview{
+	margin: auto;
+	background-color: #fff;
+	max-width: 1200px;
+	border-radius: 20px;
+}
+
+.reviewer{
+	text-transform: uppercase;
+	padding-left: 30px;
+}
+
+.review{
+	padding-left: 10px;
+	font-family: Arial, sans-serif;
+}
+
+.droparev{
+	background-color: rgba(256,256,256,0.4);
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;  
+	max-width: 400px;
+	border-radius: 40px;
+	border: 2px solid #fff;
+	padding: 10px;
+}
+
+.rr{
+	font-size: 40px;
+}
+
+.footer{
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+.lg{
+	
+}
+
+.log{
+	width: 40px;
+	margin: 20px;
+}
+
