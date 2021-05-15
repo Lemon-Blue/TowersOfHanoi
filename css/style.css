@@ -453,6 +453,16 @@ body{
 		width:100%;
 		padding: 10rem;
 	}
+
+	.Introduction{
+		height: 65vh;
+		background-color: rgba(210,255,127,1.00);
+		clip-path: polygon(0 0,100% 0,100% 45vh,0 100%);
+	}
+	.intropic{
+		height: 60vh;
+		width: auto;
+	}
 }
 
 .Reviews{
