@@ -6,14 +6,15 @@
 
 html{
 	scroll-behavior: smooth;
+	font-size: 10px;
 }
 
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1vw;
+	font-size: 1.6rem;
 	line-height: 1.7;
 	color: #000;
-	padding:10px;
+	padding:1rem;
 }
 
 .navbar{	
@@ -29,8 +30,7 @@ body{
 	
 .navbar ul li{
 	display: inline-block;
-	padding: 10px 70px;
-	margin: 10px;
+	padding: 1rem 7rem;
 	text-align: center;
 	transition: 0.3s;
 }
@@ -38,17 +38,17 @@ body{
 .navbar ul li a {
   	color: black;
   	text-align: center;
-  	padding: 14px 16px;
+  	padding: 1.4rem 1.6rem;
   	text-decoration: none;
   	text-transform: uppercase;
 }
 
 .logo{
 	display: inline;
-	max-width: 60px;
+	max-width: 6rem;
 	padding: 0;
 	border: 0;
-	margin: 10px;
+	margin: 1rem;
 	float:left;
 }
 
@@ -65,19 +65,19 @@ body{
 .headings{
 	text-align: center; 
 	color:#000;
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 	width:50%;
 	float: left;
-	padding: 40px 0 0 0;
+	padding: 4rem 0 0 0;
 }
 
 @keyframes moveinleft{
 	0%{
 		opacity: 0%;
-		transform: translateX(-50px);
+		transform: translateX(-5rem);
 	}
 	80%{
-		transform: translateX(10px);
+		transform: translateX(1rem);
 	}
 	100%{
 		opacity: 1;
@@ -88,10 +88,10 @@ body{
 @keyframes moveinright{
 	0%{
 		opacity: 0%;
-		transform: translateX(50px);
+		transform: translateX(5rem);
 	}
 	80%{
-		transform: translateX(-10px);
+		transform: translateX(-1rem);
 	}
 	100%{
 		opacity: 1;
@@ -103,8 +103,8 @@ body{
 	text-align: center; 
 	color:#000;
 	text-transform: uppercase;	
-	font-size: 3.3vw;
-	letter-spacing: 10px;
+	font-size: 5rem;
+	letter-spacing: .9rem;
 }
 
 .Introduction .toh{
@@ -117,9 +117,9 @@ body{
 	text-align: center; 
 	color:#000;
 	text-transform: uppercase;
-	font-size: 1vw;
-	letter-spacing: 15.5px;
-	word-spacing: 9px;
+	font-size: 1.8rem;
+	letter-spacing: 1.3rem;
+	word-spacing: .8rem;
 }
 
 .Introduction .tagline{
@@ -133,7 +133,7 @@ body{
 	color:#000;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 2vw;
+	font-size: 2.9rem;
 	transition: 0.5s;
 }
 
@@ -155,17 +155,17 @@ body{
 .cards{
 	float: left;
 	width:25%;
-	padding: 30px;
+	padding: 3rem;
 }
 
 .foodimg{
 	width: 100%; 
-	height: 250px;
+	height: 100%;
 	border-radius: 10%;
 }
 
 .foodname{
-	font-size: 16px;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	display: inline-block;
 }
@@ -173,29 +173,31 @@ body{
 .add {
   float: right;
   position: relative;
-  padding: 0.5px 18px 0.5px 2px;
-  border: 1px solid black;
-  border-radius: 10px; 
+  padding: 0.1rem 1.8rem 0.1rem .2rem;
+  border: .1rem solid black;
+  border-radius: 1rem; 
   font-family: sans-serif;
   font-weight: 40;
   cursor: pointer;
 }
+
 #cb1,#cb2,#cb3,#cb4,#cb5,#cb6,#cb7,#cb8 {
   display: none;
 }
+
 #cb1:checked + .add:after,#cb2:checked + .add:after,#cb3:checked + .add:after,#cb4:checked + .add:after,#cb5:checked + .add:after,#cb6:checked + .add:after,#cb7:checked + .add:after,#cb8:checked + .add:after {
   content: "ADDED";
   font-family: sans-serif;
   font-weight: 40;
   position: absolute;
-  padding-left: 2px;
-  top: -1px;
-  left: -1px;
+  padding-left: .2rem;
+  top: -.1rem;
+  left: -.1rem;
   right: 0;
   bottom: 0;
   background: rgb(0,256,0);
-  border: 1px solid black;
-  border-radius: 10px;
+  border: .1rem solid black;
+  border-radius: 1rem;
 }
 
 .fooddesc{
@@ -203,7 +205,7 @@ body{
 }
 
 .veglogo{
-	max-width: 20px;
+	max-width: 2rem;
 	float:left;
 	border-radius: 20%;
 }
@@ -213,42 +215,244 @@ body{
 }
 
 .dp{
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: rgb(0,256,0);
 }
 
 .cp{
-	font-size: 10px;
+	font-size: 1rem;
 	color: rgba(0,0,0,0.7);
 	text-decoration: line-through;
 }
 
 .disc{
-	font-size: 10px;
+	font-size: 1rem;
 }
 
 .searchbar{
-	margin-top: 10px;
-	margin-left: 406px;	
-	margin-right: 420px;
-	border: 1px solid #555;
-	margin-bottom: 10px;
+	position: relative;
+}
+
+.sb{
+	position: absolute;
+	left: 30%;
+	border: 1px solid #000;
+	width: 40%;
 }
 
 .searchbar input[type=text] {
-	padding: 6px 412px 6px 0;
-	margin: 3px;
+	border: .1rem solid #555;
 	border: none;
-	font-size: 17px;
+	font-size: 1.7rem;
+	padding: 10px 0;
 }
 .searchbar i {
+	float: left;
     position: absolute;
+    left: 67%;
 }
           
 .icon {
-    padding: 10px;
-    min-width: 100px;
+    padding: 1rem;
+    max-width: 10rem;
     float: right;
+}
+
+@media only screen and (max-width: 768px){
+	html{
+		font-size: 7.5px;
+	}
+	.logo{
+		display: inline-block;
+		max-width: 4rem;
+		padding: 0;
+		border: 0;
+		vertical-align: middle;
+	}
+		
+	.navbar ul li{
+		display: inline-block;
+		padding: 1.2rem 4px 1rem 4px;
+		text-align: center;
+		transition: 0.3s;
+	}
+	
+	.navbar ul li a {
+	  	color: black;
+	  	text-align: center;
+	  	padding: 0;
+	  	text-decoration: none;
+	  	text-transform: uppercase;
+	}	
+	.Introduction{
+		height: 75vh;
+		background-color: rgba(210,255,127,1.00);
+		clip-path: polygon(0 0,100% 0,100% 60vh,0 100%);
+	}
+
+	.headings{
+		text-align: center; 
+		color:#000;
+		margin-bottom: 1rem;
+		width:50%;
+		float: left;
+		padding: 1.2rem 0 0 0;
+	}
+
+	@keyframes moveinleft{
+		0%{
+			opacity: 0%;
+			transform: translateX(-2rem);
+		}
+		80%{
+			transform: translateX(.6rem);
+		}
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes moveinright{
+		0%{
+			opacity: 0%;
+			transform: translateX(2rem);
+		}
+		80%{
+			transform: translateX(-.6rem);
+		}
+		100%{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	.toh{	
+		text-align: center; 
+		color:#000;
+		text-transform: uppercase;	
+		font-size: 4rem;
+		letter-spacing: .4rem;
+	}
+
+	.Introduction .toh{
+		animation-name: moveinleft;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;
+	}
+
+	.tagline{	
+		text-align: center; 
+		color:#000;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		letter-spacing: .5rem;
+		word-spacing: .6rem;
+	}
+
+	.Introduction .tagline{
+		animation-name: moveinright;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;
+	}
+
+	.cos{	
+		text-align: center; 
+		color:#000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 2rem;
+		transition: 0.5s;
+	}
+
+	.cos:hover{;
+		color: #fff;
+	}
+
+	.intropic{
+		height: 70vh;
+	}
+	.cards{
+		float: left;
+		width:50%;
+		padding: 3rem;
+	}
+
+	.foodname{
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+	.fooddesc{
+		text-align: left; 
+	}
+
+	.veglogo{
+		max-width: 2rem;
+		float:left;
+		border-radius: 20%;
+	}
+
+	.foodprice{
+		text-align: right;
+	}
+
+	.dp{
+		font-size: 1.8rem;
+		color: rgb(0,256,0);
+	}
+
+	.cp{
+		font-size: 1rem;
+		color: rgba(0,0,0,0.7);
+		text-decoration: line-through;
+	}
+
+	.disc{
+		font-size: 1rem;
+	}
+
+	.searchbar{
+		position: relative;
+	}
+
+	.sb{
+		position: absolute;
+		left: 30%;
+		border: 1px solid #000;
+		width: 40%;
+	}
+
+	.searchbar input[type=text] {
+		border: .1rem solid #555;
+		border: none;
+		font-size: 1.7rem;
+		padding: 10px 0;
+	}
+	.searchbar i {
+		float: left;
+	    position: absolute;
+	    left: 65%;
+	}
+	          
+	.icon {
+	    padding: 1rem;
+	    max-width: 10rem;
+	    float: right;
+	}
+	
+}
+
+@media only screen and (max-width: 600px){
+.toh{
+	font-size: 3.5rem;
+}
+.cards{
+		float: left;
+		width:100%;
+		padding: 10rem;
+	}
 }
 
 .Reviews{
@@ -265,57 +469,84 @@ body{
 
 .revpic{
 	float: right;
-	width:250px;
-	height:230px;
-	padding:5px; 
+	width:25rem;
+	height:23rem;
+	padding:.5rem; 
 	border-radius: 8%;
 }
 
 .indivreview{
 	margin: auto;
 	background-color: #fff;
-	max-width: 1200px;
-	border-radius: 20px;
+	max-width: 80%;
+	border-radius: 2rem;
 }
 
 .reviewer{
 	text-transform: uppercase;
-	padding-left: 30px;
+	padding-left: 3rem;
 }
 
 .review{
-	padding-left: 10px;
+	padding-left: 1rem;
 	font-family: Arial, sans-serif;
 }
 
 .droparev{
 	background-color: rgba(256,256,256,0.4);
-	font-size: 20px;
+	font-size: 2rem;
 	margin: 0 auto;
 	text-align: center;  
-	max-width: 400px;
-	border-radius: 40px;
-	border: 2px solid #fff;
-	padding: 10px;
+	max-width: 40rem;
+	border-radius: 4rem;
+	border: .2rem solid #fff;
+	padding: 1rem;
 }
 
 .rr{
-	font-size: 40px;
+	font-size: 4rem;
+	text-shadow: .2rem .2rem .5rem #fff;
+}
+
+.droparev input[type=text]{
+	width: 80%;
+
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #777;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.droparev input[type=submit] {
+  background-color: #555;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.droparev textarea{
+	resize: none;
+	width:80%;
+	height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #777;
+  border-radius: 4px;
+  background-color: #f8f8f8; 
 }
 
 .footer{
 	background-color: #000;
 	color: #fff;
-	padding: 5px;
+	padding: .5rem;
 	text-align: center;
 }
 
-.lg{
-	
-}
-
 .log{
-	width: 40px;
-	margin: 20px;
+	width: 4rem;
+	margin: 2rem;
 }
 
